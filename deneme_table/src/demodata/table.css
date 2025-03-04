@@ -1,0 +1,18 @@
+.table .p-datatable {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table .p-datatable .p-datatable-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.table .p-datatable .p-paginator {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.data-padding {
+  padding-bottom: 33%;
+}

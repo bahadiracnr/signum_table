@@ -1,0 +1,24 @@
+filters?.global?.value
+            ? {
+                _or: [
+                  {
+                    Task_Id: {
+                      _eq: !isNaN(Number(filters.global.value))
+                        ? Number(filters.global.value)
+                        : null,
+                    },
+                  },
+                  {
+                    Task_No: {
+                      _eq: !isNaN(Number(filters.global.value))
+                        ? filters.global.value
+                        : undefined,
+                    },
+                  },
+
+                  { Task_Name: { _eq: filters.global.value } },
+
+                  { Task_Description: { _eq: filters.global.value } },
+                ],
+              }
+            : {},
